@@ -1,0 +1,118 @@
+/* ===============================
+   BLUE SECTION
+   =============================== */
+
+.blue-section {
+  background-color: #005696;
+  color: white;
+
+  padding: 130px 90px;           /* height increased + side margin */
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ===============================
+   ITEM
+   =============================== */
+
+.blue-section .item {
+  max-width: 200px;
+  flex: 1;
+  padding: 0 15px;
+
+  display: flex;                /* ✅ keeps images aligned */
+  flex-direction: column;
+  align-items: center;
+
+  opacity: 0;                   /* animation start */
+  transform: translateY(60px);
+}
+
+/* ===============================
+   IMAGE (ALL IN ONE LINE)
+   =============================== */
+
+.blue-section .item img {
+  width: 75px;                  /* slightly bigger */
+  height: 75px;
+  margin-bottom: 16px;
+
+  display: block;               /* prevents misalignment */
+}
+
+/* ===============================
+   TEXT
+   =============================== */
+
+.blue-section .item strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+/* ===============================
+   DOWN TO UP ANIMATION (ONE TIME)
+   =============================== */
+
+.blue-section .item.animate-up {
+  animation: slideUpOnce 0.9s ease-out forwards;
+}
+
+@keyframes slideUpOnce {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ===============================
+   TABLET
+   =============================== */
+
+@media (max-width: 900px) {
+  .blue-section {
+    flex-wrap: wrap;
+    padding: 70px 40px;          /* reduced side space */
+  }
+
+  .blue-section .item {
+    max-width: 45%;
+    margin-bottom: 30px;
+  }
+}
+
+/* ===============================
+   MOBILE
+   =============================== */
+
+@media (max-width: 480px) {
+  .blue-section {
+    padding: 50px 20px;
+  }
+
+  .blue-section .item {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .blue-section .item img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .blue-section .item strong {
+    font-size: 13px;
+  }
+}

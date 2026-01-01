@@ -1,0 +1,78 @@
+.solutions-section {
+  background: #ffffff;
+  padding: 90px 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.solutions-container {
+  width: 1200px;
+  max-width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+.solutions-title {
+  font-size: 38px;
+  font-weight: 400;
+  color: #777777;
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
+}
+
+.solutions-subtitle {
+  font-size: 26px;
+  font-weight: 400;
+  color: #888888;
+  letter-spacing: 0.15em;
+  margin-bottom: 80px;
+}
+
+.solutions-subtitle span {
+  margin: 0 20px;
+  color: #cccccc;
+}
+
+/* ================= STATS ================= */
+.solutions-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.solutions-stat {
+  flex: 1;
+  text-align: center;
+}
+
+.solutions-stat h3 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1f4d7a;
+  margin-bottom: 10px;
+}
+
+.solutions-stat p {
+  font-size: 14px;
+  color: #777777;
+}
+
+/* Vertical Divider */
+.solutions-divider {
+  width: 1px;
+  height: 60px;
+  background-color: #d9d9d9;
+  align-self: center;
+}
+
+/* DIVIDER */
+.divider {
+    width: 1px;
+    height: 60px;
+    background: #ddd;
+}
+
+/* =====================================================
+   POPUP FORM (GET STARTED)
+===================================================== */
+

@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+   
+}
+
+body {
+    background: #ffffff;
+    color: #111;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    width: 1200px;
+    max-width: 95%;
+    margin: auto;
+}
+
+/* ================= BUTTONS ================= */
+
+
+
+
+
+/* =====================================================
+   CUSTOM SERVICE DROPDOWN
+===================================================== */
+.custom-select {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.select-box {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    background: #fff;
+}
+
+.select-options {
+    position: absolute;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 8px;
+    margin-top: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: none;
+    z-index: 10;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.select-options div {
+    padding: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.select-options div:hover {
+    background: #f3f6ff;
+}
+
+.select-options div:last-child {
+    border-bottom: none;
+}
+/* Business Work Section Styles */
+
+
+/* ================= AUTO MARKETING SECTION ================= */
+
+
+
+/* Services Section */
+
+/*
+
+/* ================= LEADERSHIP SECTION ================= */
+
+
+
+/* ================= TESTIMONIALS SECTION ================= */
+
+.testimonials-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.testimonials-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.stars {
+  color: #2979ff;
+  margin-bottom: 12px;
+}
+
+.testimonial-card strong {
+  display: block;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .leadership-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .leadership-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* CONTACT SECTION */
+/* ================= CONTACT SECTION ================= */
+

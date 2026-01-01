@@ -1,0 +1,118 @@
+/* ===============================
+   TESTIMONIALS SECTION
+   =============================== */
+
+.testimonials-section {
+  padding: 110px 0;
+  background: #ffffff;
+}
+
+.container {
+  width: 1200px;
+  max-width: 95%;
+  margin: auto;
+}
+
+.testimonials-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* ===============================
+   ONE-LINE LAYOUT
+   =============================== */
+
+.testimonials-grid {
+  display: flex;
+  gap: 25px;
+
+  flex-wrap: nowrap;        /* 🔴 one line only */
+  overflow-x: auto;         /* scroll if needed */
+  padding-bottom: 10px;
+}
+
+/* hide scrollbar (optional, clean look) */
+.testimonials-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* ===============================
+   CARD
+   =============================== */
+
+.testimonial-card {
+  width: 359px;
+  height: 280px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  flex-shrink: 0;           /* prevent shrinking */
+
+  /* animation initial state */
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+/* ===============================
+   CARD TOP
+   =============================== */
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.stars {
+  color: #ff9800;
+  font-size: 16px;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2979ff;
+}
+
+/* ===============================
+   TEXT
+   =============================== */
+
+.testimonial-card p {
+  line-height: 1.6;
+  color: #444;
+}
+
+.testimonial-card strong {
+  display: block;
+  margin-top: 18px;
+  font-size: 13px;
+  color: #000;
+}
+
+/* ===============================
+   ANIMATION
+   =============================== */
+
+.testimonial-card.animate {
+  animation: slideUpOnce 0.9s ease-out forwards;
+}
+
+@keyframes slideUpOnce {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

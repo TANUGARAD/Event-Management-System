@@ -1,0 +1,225 @@
+/* ===============================
+   RESET
+   =============================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #222;
+}
+
+/* ===============================
+   PAGE WRAPPER
+   =============================== */
+.page-wrapper {
+  background: #ffffff;
+  width: 100%;
+}
+
+/* ===============================
+   COMMON SECTION
+   =============================== */
+.page-wrapper .section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Reduce gap between sections */
+.page-wrapper .section-one {
+  margin-bottom: 20px;
+  margin-left: 300px;
+}
+
+.page-wrapper .section-two {
+  margin-top: 0;
+  padding: 0;
+  margin-left: 80px;
+  margin-right: 80px;
+
+  /* ✅ FIXED SECTION SIZE */
+  max-width: 1440px;
+  height: 583px;
+
+  background-image: url("image/backgound.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ===============================
+   CONTAINER
+   =============================== */
+.page-wrapper .container {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 500px;
+  display: flex;
+  position: relative;
+}
+
+.page-wrapper .section-one {
+  margin-bottom: 20px;
+  margin-left: 80px;   /* ✅ changed from 100px */
+}
+
+/* ===============================
+   TEXT CONTENT
+   =============================== */
+.page-wrapper .text-content {
+  width: 50%;
+  padding: 1px 40px;
+  z-index: 2;
+}
+
+.page-wrapper .text-content h1 {
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 1.3;
+  color: #333;
+  margin-top: 80px;   /* smaller gap than h1 */
+  margin-left:-32px ;
+}
+.page-wrapper .text-content h2 {
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 1.3;
+  color: #333;
+  margin-top: 2px;   /* smaller gap than h1 */
+  
+}
+
+
+.page-wrapper .text-content p {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.2;
+  max-width: 420px;
+  margin-left:-32px ;
+}
+
+/* ===============================
+   SECTION ONE TEXT ADJUSTMENT
+   =============================== */
+.page-wrapper .section-one .text-content {
+  padding-left: 130px;
+}
+
+/* ===============================
+   SECTION ONE IMAGE (RIGHT)
+   =============================== */
+.page-wrapper .section-one .image-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page-wrapper .section-one .image-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateX(120px);
+}
+
+.page-wrapper .section-one .image-content img.animate-once {
+  animation: slideRightToLeft 1.2s ease-out forwards;
+}
+
+@keyframes slideRightToLeft {
+  from {
+    transform: translateX(120px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* =====================================================
+   ✅ SECTION TWO – EXACT SIZE ADJUSTMENTS (ONLY)
+   ===================================================== */
+
+/* Container layout */
+.page-wrapper .section-two .container {
+  height: 583px;
+   
+  align-items: center;
+  gap: 82px; /* ✅ space between image and text */
+}
+
+/* Image box */
+.page-wrapper .section-two .image-content1 {
+  width: 650px;
+  height: 424px;
+  margin-left: 80px;
+}
+
+/* Image */
+.page-wrapper .section-two .image-content1 img {
+  width: 600px;
+  height: 424px;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateX(-120px);
+}
+
+/* Image animation */
+.page-wrapper .image-content1 img.animate-once {
+  animation: slideLeftToRight 1.2s ease-out forwards;
+}
+
+@keyframes slideLeftToRight {
+  from {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Text box */
+.page-wrapper .section-two .text-content {
+  width: 375px;
+  height: 365px;
+  padding: 0;
+}
+
+.page-wrapper .section-two-text {
+  padding-top: 0;
+}
+
+/* ===============================
+   FLOATING ICON
+   =============================== */
+
+.page-wrapper .floating-icon {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background: #0b5fa5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 610px;
+  top: 250px;
+  z-index: 3;
+}
+
+.page-wrapper .floating-icon img {
+  width: 200px;
+  height: 200px;
+  margin-left: 25px;
+}

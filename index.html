@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>TEMGIRE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <link rel="stylesheet" href="css\style.css" />
+    <link rel="stylesheet" href="css\firstheader.css" />
+    <link rel="stylesheet"href="css\pop.css"/>
+    <link rel="stylesheet"href="css\solution.css"/>
+    <link rel="stylesheet"href="css\BUSINESS _WORK.css">
+    <link rel="stylesheet"href="css\Atomarketing.css">
+    <link rel="stylesheet"href="css\servicebluesection.css">
+    <link rel="stylesheet"href="css\LEADERSHIP.CSS">
+     <link rel="stylesheet"href="css\review.css">
+     <link rel="stylesheet"href="css\career.css">
+     <link rel="stylesheet"href="css\enquirypopup.css">
+     <link rel="stylesheet"href="css\contact.css">
+     <link rel="stylesheet"href="css\joinform.css">
+     <link rel="stylesheet"href="css\services.css">
+     <link rel="stylesheet"href="css\pop.css">
+     
+
+     
+
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+ 
+  <header class="header">
+  <div class="container header-wrapper">
+    <div class="logo-spacer"></div>
+
+    <nav class="nav-menu">
+      <a href="#home" class="active">Home</a>
+      <a href="#About">About</a>
+      <a href="#expertise">Services</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#career">Career</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="logo-right">
+      <img src="image/TEMGIRE LOGO REG. HD 2.png" alt="TEMGIRE Logo">
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero"id="home">
+  <div class="container">
+
+    <h1 class="hero-title">
+      Delivering Innovation,<br>
+      Intelligence, & Impact – <span>Globally.</span>
+    </h1>
+
+    <p class="hero-sub">
+      Empowering Enterprises with Intelligent Technology & Strategic Consulting
+    </p>
+
+    <div class="service-wrapper">
+      <div class="service-icons">
+        <div class="service-box"><img src="image/AIicon.png"><span>Intelligence</span></div>
+        <div class="service-box"><img src="image\tabler_cloud-computing (1).png"><span>Cloud Solution</span></div>
+        <div class="service-box"><img src="image/cyberSecurityicon.png"><span>Cybersecurity</span></div>
+        <div class="service-box"><img src="image/consaltancy.png"><span>Consulting</span></div>
+        <div class="service-box"><img src="image/EXAMINlogo.png"><span>EXIM Logistics</span></div>
+        <div class="service-box"><img src="image\software (1).png"><span>Software</span></div>
+        <div class="service-box"><img src="image/sastanableit.png"><span>Sustainable IT</span></div>
+        <div class="service-box"><img src="image/ui.png"><span>UI/UX</span></div>
+         <div class="service-box"><img src="image/ui.png"><span>UI/UX</span></div>
+      </div>
+    </div>
+    <div class="hero-actions hero-buttons">
+  <button class="btn-primary"onclick="openPopup()">GET STARTED</button>
+  <button class="btn-secondary">CONTACT US</button>
+</div>
+
+     
+
+</section>
+<div class="popup-overlay" id="popup">
+  <div class="popup-form">
+
+    <span class="close-btn" onclick="closePopup()">×</span>
+    <h2>Enquiry Form</h2>
+
+    <label>Full Name *</label>
+    <input id="fullName" required>
+
+    <label>Company Name *</label>
+    <input id="companyName" required>
+
+    <label>E-Mail *</label>
+    <input id="email" required>
+
+    <label>Phone Number</label>
+    <div class="phone-group">
+      <select id="countryCode"></select>
+      <input id="phone" placeholder="Phone number">
+    </div>
+
+    <label>Select Your Requirement *</label>
+    <div class="select-box" onclick="toggleServices()">
+      <span id="serviceText">Choose a Service</span>
+      <span>⌄</span>
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <div class="services-section" id="servicesSection">
+
+      <label><input type="checkbox" value="Artificial Intelligence"> Artificial Intelligence (AI)</label>
+      <label><input type="checkbox" value="Cloud Solutions"> Cloud Solutions</label>
+      <label><input type="checkbox" value="Cybersecurity"> Cybersecurity</label>
+      <label><input type="checkbox" value="Consulting & Outsourcing"> Consulting & Outsourcing</label>
+      <label><input type="checkbox" value="Digital Solutions"> Digital Solutions</label>
+      <label><input type="checkbox" value="Software Solutions"> Software Solutions</label>
+      <label><input type="checkbox" value="Sustainable IT"> Sustainable IT</label>
+      <label><input type="checkbox" value="Experience Design"> Experience Design (UI/UX)</label>
+
+      <label>
+        <input type="checkbox" id="otherService"> Other
+      </label>
+      <input id="otherInput" placeholder="Enter other service">
+    </div>
+
+    <button class="btn-primary" onclick="submitForm()">Send Message</button>
+
+  </div>
+</div>
+
+
+
+
+
+
+<!-- ================= HERO ================= -->
+
+
+  
+<!-- ================= STATS ================= -->
+
+<section class="solutions-section"id="About">
+  <div class="solutions-container">
+
+    <h2 class="solutions-title">
+      Get the Solutions That Fit-Perfectly
+    </h2>
+
+    <p class="solutions-subtitle">
+      FASTER <span>|</span> SMARTER <span>|</span> EASIER
+    </p>
+
+    <div class="solutions-stats">
+
+      <div class="solutions-stat">
+        <h3>25+</h3>
+        <p>Years of experience</p>
+      </div>
+
+      <div class="solutions-divider"></div>
+
+      <div class="solutions-stat">
+        <h3>20+</h3>
+        <p>Satisfied clients around the world</p>
+      </div>
+
+      <div class="solutions-divider"></div>
+
+      <div class="solutions-stat">
+        <h3>20+</h3>
+        <p>Technology we Follow</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ================= NEW BUSINESS WORK SECTION ================= -->
+
+
+
+     
+ <section class="business-section">
+  <div class="container">
+    <h1 class="business-title">
+        A Team create 
+        <span class="highlight">Amazing<br />Work</span> 
+         for Your Business
+        </h1>
+
+    
+    <div class="business-cards">
+      <!-- Card 1 -->
+      <div class="business-card">
+        <img src="image/happy_customers.png.png" alt="Happy Customers" class="business-img" />
+        <h3 class="card-title">Happy Customers</h3>
+        <p>We prioritize user experience and client satisfaction at every stage. Our agile approach ensures that every project delivers measurable value and lasting results.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="business-card">
+        <img src="image/imagesbest_integration.png.png" alt="Best Integration" class="business-img" />
+        <h3 class="card-title">Best Integration</h3>
+        <p>From cloud systems to enterprise applications, we specialize in smooth, secure, and scalable integrations that connect your business ecosystem effortlessly.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="business-card">
+        <img src="image\Rectangle 230.png" alt="Grow Without Problems" class="business-img" />
+        <h3 class="card-title">Grow Without Problems</h3>
+      <p>Our reliable support and future-ready solutions help you scale with ease ensuring your technology evolves as fast as your business does.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= POPUP FORM ================= -->
+
+
+
+<!-- ================= AUTO MARKETING SECTION ================= -->
+<div class="page-wrapper">
+
+  <!-- ============ SECTION 1 ============ -->
+  <section class="section section-one">
+    <div class="container">
+
+      <!-- Left Content -->
+      <div class="text-content">
+        <h1>
+          Auto-Marketing<br>
+          and Help Desk<br>
+          Software
+        </h1>
+
+        <p>
+          We enable businesses to transform, scale, and stay competitive through
+          smart, sustainable digital solutions. Based in Frankfurt, TEMGIRE
+          Consultancy Services GmbH blends German precision with global innovation.
+        </p>
+      </div>
+
+      <!-- Right Image -->
+      <div class="image-content">
+        <img src="image/meeting.jpg.png" alt="Team Meeting">
+      </div>
+
+      <!-- Floating Icon -->
+      <div class="floating-icon">
+        <img src="image\rocket.png" alt="Rocket Icon">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ SECTION 2 ============ -->
+  <section class="section section-two">
+    <div class="container">
+
+      <!-- Left Image -->
+      <div class="image-content1">
+        <img src="image/growth.png" alt="Business Growth">
+      </div>
+
+      <!-- Right Text -->
+      <div class="text-content section-two-text">
+        <h2>We will grow <br>your business<br> significantly</h2>
+
+        <p>
+          We will substantially enhance your business by employing innovative
+          strategies, utilizing data-driven insights, and implementing scalable
+          digital solutions that guarantee enduring success and measurable impact.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+ 
+
+<!-- ===============================
+   SERVICES SECTION
+   =============================== -->
+<section id="expertise" class="expertise-section">
+  <h2>Our Services</h2>
+
+  <div class="expertise-grid">
+
+    <!-- Card 1 -->
+    <div class="expertise-card">
+      <img src="image/AI.png" alt="AI">
+      <strong>Artificial Intelligence (AI)</strong>
+      <p>Transform your decision-making with AI-powered insights and automation. Our capabilities span machine learning, predictive analytics, NLP, and computer vision—enabling smarter operations and personalized customer experiences.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="expertise-card">
+      <img src="image\cloude solution.png" alt="Cloud Solutions">
+      <strong>Cloud Solutions</strong>
+      <p>Accelerate agility with secure, scalable, and optimized cloud ecosystems. We offer cloud strategy, migration, integration, and management services helping organizations achieve resilience, performance, and cost efficiency.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="expertise-card">
+      <img src="image\CyberSecurity.png" alt="Cybersecurity">
+      <strong>Cybersecurity</strong>
+      <p>In a world of increasing digital threats, we protect what matters most. Our cybersecurity services include threat intelligence, zero-trust frameworks, governance, and data protection ensuring compliance, trust, & business continuity.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="expertise-card">
+      <img src="image\consltancy.png" alt="Consulting & Outsourcing">
+      <strong>Consulting & Outsourcing</strong>
+      <p>We provide strategic consulting and managed services to optimize IT operations, improve productivity, and reduce costs — enabling businesses to focus on their core strengths.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="expertise-card">
+      <img src="image\EXMINlogi.png" alt="EXIM Logistics Solutions">
+      <strong>EXIM Logistics Solutions</strong>
+      <p>Our proprietary EXIM digital platforms enable end-to-end visibility and control in export-import operations — empowering logistics networks with data-driven intelligence.</p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="expertise-card">
+      <img src="image\digitalSolution.png" alt="Digital Solutions">
+      <strong>Digital Solutions</strong>
+      <p>In a world of increasing digital threats, we protect what matters most. Our cybersecurity services include threat intelligence, zero-trust frameworks, governance, and data protection — ensuring compliance, trust, and business continuity.</p>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="expertise-card">
+      <img src="image\Sowftware.png" alt="Software Solutions">
+      <strong>Software Solutions</strong>
+      <p>We design and develop custom enterprise applications, web platforms, and integrated systems that simplify complex workflows and improve efficiency.</p>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="expertise-card">
+      <img src="image\SustainableIT.png" alt="Sustainable IT">
+      <strong>Sustainable IT</strong>
+      <p>We embed sustainability into technology. From green computing to energy-efficient cloud infrastructures, we help clients meet ESG goals and transition toward responsible digital ecosystems.</p>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="expertise-card">
+      <img src="image\UIUX.png" alt="Experience Design (UX/UI)">
+      <strong>Experience Design (UX/UI)</strong>
+      <p>In a world of increasing digital threats, we protect what matters most. Our cybersecurity services include threat intelligence, zero-trust frameworks, governance, and data protection ensuring compliance, trust, and business continuity.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+ 
+
+<!-- Blue Info Section -->
+<section class="blue-section">
+  <div class="item">
+    <img src="image\global.png" alt="Global Expertise Icon" />
+    <strong>Global Expertise, Local Precision</strong>
+    Headquartered in Germany with a global mindset.
+  </div>
+  <div class="item">
+    <img src="image\Cross Industry Icon.png" alt="Cross Industry Icon" />
+    <strong>Cross-Industry Intelligence</strong>
+    Experience across manufacturing, logistics, retail, and services.
+  </div>
+  <div class="item">
+    <img src="image\sustani.png" alt="Sustainability Icon" />
+    <strong>Sustainability Commitment</strong>
+    Technology aligned with Environmental, social & governance (ESG) principles.
+  </div>
+  <div class="item">
+    <img src="image\security.png" alt="Security Icon" />
+    <strong>Security  by  Design</strong>
+    Enterprise-grade frameworks  with  built-in compliance.
+  </div>
+  <div class="item">
+    <img src="image\client.png" alt="Client First Icon" />
+    <strong>Client-First Approach</strong>
+    We measure success by the value we deliver to you.
+  </div>
+</section>
+
+
+ <!-- Leadership Section -->
+
+<!-- Leadership Section -->
+<section class="leadership-section"id="leadership">
+  <div class="container">
+    <h2>Our Leadership Team</h2>
+
+    <div class="leadership-grid">
+      <!-- Card 1 -->
+      <div class="leader-card">
+        <div class="leader-info">
+          <h4>Vinayak Temgire</h4>
+          <p>Founder & CEO</p>
+          <span>15+ experience</span>
+        </div>
+        <img src="image\viveksir.png" alt="Leader">
+      </div>
+
+      <!-- Card 2 -->
+      <div class="leader-card">
+        <div class="leader-info">
+          <h4>Vishal Khairnar</h4>
+          <p>Co-Founder & CTO</p>
+          <span>25+ experience</span>
+        </div>
+        <img src="image\vinodsir.png" alt="Leader">
+      </div>
+
+      <!-- Card 3 -->
+      <div class="leader-card">
+        <div class="leader-info">
+          <h4>Sujit Kumar</h4>
+          <p>EXIM Operation</p>
+          <span>9+ experience</span>
+        </div>
+        <img src="image\sujit sir.png" alt="Leader">
+      </div>
+
+      <!-- Card 4 -->
+      <div class="leader-card">
+        <div class="leader-info">
+          <h4>Manisha Ahire</h4>
+          <p>UX Project Manager</p>
+          <span>5+ experience</span>
+        </div>
+        <img src="image\manisha.png" alt="Leader">
+      </div>
+
+      <!-- Card 5 -->
+      <div class="leader-card">
+        <div class="leader-info">
+          <h4>Ashwin Dhole</h4>
+          <p>Manager Business Development</p>
+          <span>14+ experience</span>
+        </div>
+        <img src="image\WhatsApp Image 2025-12-24 at 03.20.27_4cfb3db2.jpg" alt="Leader">
+      </div>
+
+      <!-- Card 6 -->
+      <div class="leader-card">
+        <div class="leader-info">
+          <h4>Tanuja Garad</h4>
+          <p>Software Developer</p>
+          <span>3+ experience</span>
+        </div>
+        <img src="image\Tanuja.jpg" alt="Leader">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+  <div class="container">
+    <h2>We believe people we trust</h2>
+
+    <div class="testimonials-grid">
+      <!-- Card 1 -->
+      <div class="testimonial-card">
+        <div class="card-top">
+          <div class="stars">★★★★★</div>
+          <div class="badge">
+            👍 <span>Testimonial</span>
+          </div>
+        </div>
+        <p>
+          Dude, your stuff is the bomb! House rent is the real deal!
+        </p>
+        <strong>Lana Bernier</strong>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="testimonial-card">
+        <div class="card-top">
+          <div class="stars">★★★★★</div>
+          <div class="badge">
+            👍 <span>Testimonial</span>
+          </div>
+        </div>
+        <p>
+          Infinity Estate made my life so easy. Excellent service!
+        </p>
+        <strong>Mrs. Van Hartmann</strong>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="testimonial-card">
+        <div class="card-top">
+          <div class="stars">★★★★★</div>
+          <div class="badge">
+            👍 <span>Testimonial</span>
+          </div>
+        </div>
+        <p>
+          You've saved our business. Truly wonderful experience.
+        </p>
+        <strong>Philip Deckow</strong>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="testimonial-card">
+        <div class="card-top">
+          <div class="stars">★★★★★</div>
+          <div class="badge">
+            👍 <span>Testimonial</span>
+          </div>
+        </div>
+        <p>
+          I strongly recommend them to everyone.
+        </p>
+        <strong>Lana Bernier</strong>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ================= HERO ALT ================= -->
+<!-- ================= HERO (RENAMED) ================= -->
+<section class="hero-alt"id="career">
+  
+  <h1 class="heroalt-title">
+    Take your business<br>
+    service to the <span>next level</span>
+  </h1>
+
+  <div class="hero-image-wrap-new">
+    <img src="image\Frame 17.png" alt="Team">
+  </div>
+
+</section>
+
+
+
+<!-- ================= CTA (AS IT IS) ================= -->
+<section class="career-section" tabindex="0">
+  <div class="career-inner">
+    <div class="career-text">
+      <h2 class="career-title">Build your career with us</h2>
+      <p>
+        We’re always looking for passionate talent. Share your details and
+        take the next step in your career.
+      </p>
+    </div>
+
+    <button class="career-btn1" id="joinBtn1">Join Our Team</button>
+  </div>
+</section>
+
+
+<!-- ================= join us================= -->
+ 
+<div class="popup-overlay1" id="pop1">
+  <div class="popup1">
+
+    <span class="close1" id="closeBtn1">&times;</span>
+
+    <form id="careerForm1" enctype="multipart/form-data">
+      <input type="text" name="fullname" placeholder="Full Name *" required>
+      <input type="email" name="email" placeholder="Email *" required>
+
+      <div class="phone-row1">
+        <span>+91</span>
+        <input type="text" name="phone" placeholder="Enter your phone number" required>
+      </div>
+
+      <input type="text" name="role" placeholder="Current Role / Area of Expertise *" required>
+      <input type="text" name="portfolio" placeholder="Portfolio / LinkedIn URL (Optional)">
+
+      <div class="row1">
+        <select name="experience">
+          <option>Experience</option>
+          <option>0-1 Years</option>
+          <option>1-3 Years</option>
+          <option>3+ Years</option>
+        </select>
+      </div>
+
+      <!-- Upload on next line -->
+      <div>
+        <label class="upload1">
+          Upload Resume / CV
+          <input type="file" name="resume" hidden>
+        </label>
+      </div>
+
+      <div class="actions1">
+        <button type="button" id="cancelBtn1">Cancel</button>
+        <button type="submit">Submit Application</button>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+
+    <!-- Contact Form -->
+  <section class="contact-section"id="contact">
+
+  <div class="contact-wrapper">
+
+    <!-- CONTACT CARD -->
+    <div class="contact-container"id="contact">
+      <h2>Get in <span class="blue-text">Touch</span></h2>
+      <p class="subtitle">Share your details and we’ll connect with you</p>
+
+  <form id="contactForm">
+  <input type="text" id="name" placeholder="Name *" required />
+  <input type="email" id="email" placeholder="Email *" required />
+  <input type="text" id="mobile" placeholder="Phone number *" required />
+  <textarea id="message" placeholder="Message"></textarea>
+
+  <button type="submit">SEND MESSAGE</button>
+
+  <!-- STATUS MESSAGE -->
+  <div id="status" style="margin-top:10px;font-size:14px;"></div>
+</form>
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+        <div class="info-item">
+          <span class="icon">📞</span>
+          <div>
+            <p class="info-label">PHONE</p>
+            <p class="info-text">+91 74992 21194</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span class="icon">✉️</span>
+          <div>
+            <p class="info-label">EMAIL</p>
+            <p class="info-text">vick@temgire.com</p>
+            <p class="info-text">info@temgire.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAP CARD -->
+    <div class="map-container">
+      <div class="map-tabs">
+        <button class="active">Germany</button>
+        <button>India</button>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps?q=Am+Seedamm+44,+60489+Frankfurt+am+Main,+Germany&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+
+</section>
+
+  
+
+
+
+
+
+
+<script src="js\header.js"></script>
+<script src="js\Busnesswork.js"></script>
+<script src="js\Atomarketing.js"></script>
+<script src="js\Atomarketing1.js"></script>
+<script src="js\servicebluesection.js"></script>
+<script src="js\LEADERSHIP.js"></script>
+<script src="js\review.js"></script>
+<script src="js\career1.js"></script>
+<script src="js\career2.js"></script>
+<script src="js\enquirypopup.js"></script>
+<script src="js\contact.js"></script>
+<script src="js\Joinus.js"></script>
+<script src="js\pop.js"></script>
+
+</body>
+</html>

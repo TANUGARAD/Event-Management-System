@@ -1,0 +1,96 @@
+/* ===============================
+   EXPERTISE SECTION STYLES
+   =============================== */
+
+/* Section Title */
+.expertise-section h2 {
+  font-weight: 700;
+  font-size: 36px;
+  
+  margin-bottom: 40px;
+  color: #000;
+  margin-left: 150px;
+}
+
+/* Section Container */
+.expertise-section {
+  max-width: 1440px;
+ 
+  padding: 0 20px;
+  margin-left:150 ;
+}
+
+/* Grid Layout */
+.expertise-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 150px;
+  margin-right: 150px;
+
+  justify-content: space-between;
+}
+
+/* Individual Card */
+.expertise-card {
+  flex: 0 0 calc(33.333% - 20px);
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  
+  transition: transform 0.3s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.expertise-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+/* Card Image */
+.expertise-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Card Title */
+.expertise-card strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Card Description */
+.expertise-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+   =============================== */
+@media (max-width: 1024px) {
+  .expertise-card {
+    flex: 0 0 calc(50% - 15px); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .expertise-card {
+    flex: 0 0 100%; /* 1 card per row */
+  }
+
+  .expertise-section h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,226 @@
+/* ===============================
+   RESET
+=============================== */
+
+/* ===============================
+   COMMON BUTTON (GET STARTED)
+=============================== */
+.btn-primary {
+  background: #0b84f3;
+  color: #fff;
+  padding: 8px 18px;        /* ✅ reduced size */
+  font-size: 14px;          /* ✅ smaller text */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 140px;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #0965c1;
+}
+
+/* ===============================
+   POPUP OVERLAY
+=============================== */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 15px;
+}
+
+/* ===============================
+   POPUP BOX
+=============================== */
+.popup-form {
+  background: #ffffff;
+  width: 420px;
+  max-width: 100%;
+  padding: 30px;
+  border-radius: 12px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* ===============================
+   CLOSE BUTTON
+=============================== */
+.close-btn,
+.close1 {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* ===============================
+   FORM ELEMENTS
+=============================== */
+.popup-form input,
+.popup-form select,
+.popup-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.popup-form textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+/* ===============================
+   PHONE INPUT ROW
+=============================== */
+.phone-group,
+.phone-row1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.phone-group span {
+  padding: 12px;
+  background: #eee;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* ===============================
+   SELECT BOX
+=============================== */
+.select-box {
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===============================
+   SERVICES / CHECKBOX SECTION
+=============================== */
+.services-section {
+  display: none;
+  margin-top: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* ✅ CHECKBOX ONE LINE */
+.services-section label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.services-section input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+/* ===============================
+   OTHER INPUT
+=============================== */
+#otherInput {
+  display: none;
+  margin-top: 10px;
+}
+
+/* ===============================
+   FORM SUBMIT BUTTON
+=============================== */
+button[type="submit"] {
+  background: #0b84f3;
+  color: #fff;
+  width: 100%;
+  border: none;
+  padding: 13px;
+  border-radius: 6px;
+  margin-top: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #0965c1;
+}
+
+/* ===============================
+   ACTION BUTTON ROW
+=============================== */
+.actions1 {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.actions1 button {
+  flex: 1;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+=============================== */
+@media (max-width: 600px) {
+  .popup-form {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .popup-form input,
+  .popup-form select,
+  .popup-form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn-primary {
+    padding: 7px 14px;
+    font-size: 13px;
+    min-width: 120px;
+  }
+}
+
+/* ===============================
+   VERY SMALL DEVICES
+=============================== */
+@media (max-width: 400px) {
+  .services-section label {
+    white-space: normal;
+  }
+}

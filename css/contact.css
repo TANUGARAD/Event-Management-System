@@ -1,0 +1,181 @@
+.contact-section {
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
+
+/* ===============================
+   WRAPPER
+   =============================== */
+.contact-wrapper {
+  max-width: 1400px;                 /* ✅ little wider */
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+align-items: stretch;
+  margin-left: 110px;                /* ✅ added */
+  margin-right: 110px;               /* ✅ added */
+}
+
+/* ===============================
+   CONTACT CARD (FORM)
+   =============================== */
+.contact-container {
+  width: 520px;                      /* ✅ increased */
+  background: #fff;
+  padding: 40px;                     /* ✅ increased padding */
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.1);
+}
+
+.contact-container h2 {
+  font-size: 30px;                   /* ✅ slightly bigger */
+  font-weight: 700;
+}
+
+.blue-text {
+  color: #007bff;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #555;
+  margin: 8px 0 22px;
+}
+
+/* ===============================
+   FORM
+   =============================== */
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 14px 16px;                /* ✅ bigger fields */
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.contact-container textarea {
+  height: 110px;                     /* ✅ taller */
+  resize: none;
+}
+
+.contact-container button {
+  width: 100%;
+  padding: 14px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-container button:hover {
+  background: #0056cc;
+}
+
+/* ===============================
+   CONTACT INFO
+   =============================== */
+.contact-info {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.info-label {
+  font-size: 13px;
+  font-weight: bold;
+  color: #666;
+}
+
+.info-text {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ===============================
+   MAP CARD (SAME SIZE AS FORM)
+   =============================== */
+.map-container {
+  width: 520px;                      /* ✅ SAME as form */
+  background: #fff;
+  padding: 40px;                     /* ✅ SAME padding */
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.1);
+}
+
+.map-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.map-tabs button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #ddd;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.map-tabs button.active,
+.map-tabs button:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 520px;                     /* ✅ balanced with form */
+  border: none;
+  border-radius: 14px;
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+@media (max-width: 900px) {
+  .contact-wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .contact-container,
+  .map-container {
+    width: 100%;
+  }
+
+  .map-container iframe {
+    height: 380px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container,
+  .map-container {
+    padding: 28px;
+  }
+}
